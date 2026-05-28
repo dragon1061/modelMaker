@@ -3,6 +3,8 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages 部署在子路径下，需要设置 base
+  base: '/modelMaker/',
   plugins: [vue()],
   build: {
     // 拆分包：把 three.js 单独打包，利用浏览器缓存
