@@ -132,16 +132,7 @@ function generate() {
   </div>
 </template>
 
-<script lang="ts">
-// field definitions for future extensibility
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const _fields = [
-  { key: 'dn',  label: '口径',    abbr: 'Dn', unit: 'mm', min: 1 },
-  { key: 'h',   label: '高度',    abbr: 'H',  unit: 'mm', min: 1 },
-  { key: 'df',  label: '法兰外径', abbr: 'Df', unit: 'mm', min: 1 },
-  { key: 't',   label: '厚度',    abbr: 't',  unit: 'mm', min: 1 },
-]
-</script>
+
 
 <style scoped>
 /* ─────────────────────────────────────────
