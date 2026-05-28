@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap');
+
+:root {
+  /* ── Core palette ── */
+  --bg-base:       #0b0e14;
+  --bg-surface:    #111520;
+  --bg-panel:      #141824;
+  --bg-input:      #0d1018;
+  --bg-hover:      #1a2030;
+
+  --border-dim:    rgba(255,255,255,0.06);
+  --border-mid:    rgba(255,255,255,0.10);
+  --border-hi:     rgba(255,255,255,0.18);
+
+  /* ── Accent ── */
+  --amber:         #f59e0b;
+  --amber-glow:    rgba(245,158,11,0.18);
+  --amber-dim:     rgba(245,158,11,0.55);
+  --teal:          #00d9b4;
+  --teal-glow:     rgba(0,217,180,0.15);
+
+  /* ── Text ── */
+  --text-primary:  #e8eaf0;
+  --text-secondary:#7b8399;
+  --text-muted:    #3f4558;
+
+  /* ── Danger ── */
+  --red:           #f87171;
+  --red-bg:        rgba(248,113,113,0.08);
+  --red-border:    rgba(248,113,113,0.25);
+
+  font-family: 'Noto Sans SC', 'JetBrains Mono', monospace;
+  color: var(--text-primary);
+  background: var(--bg-base);
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  overflow: hidden;
+  background:
+    /* subtle grid */
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px),
+    var(--bg-base);
+  background-size: 40px 40px, 40px 40px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 2px; }
